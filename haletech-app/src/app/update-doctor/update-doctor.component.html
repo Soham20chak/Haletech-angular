@@ -1,0 +1,39 @@
+<div class="col-md-6 offset-md-3">
+    <h3>Update Doctors</h3>
+    <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label> Name of the doctor</label>
+            <input type="text" class="form-control" id="name" [(ngModel)]="doctor.name" name="name">
+        </div>
+        <div class="row">
+            <div class="form-group col-6">
+                <label> Qualification </label>
+                <input type="text" class="form-control" id="qualification" [(ngModel)]="doctor.qualification"
+                    name="qualification">
+            </div>
+            <div class="form-group col-6">
+                <label> Specialization </label>
+                <input type="text" class="form-control" id="specialization" [(ngModel)]="doctor.specialization"
+                    name="specialization">
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-6">
+                <label> Date of Birth </label>
+                <input type="text" class="form-control" id="dob" [(ngModel)]="doctor.dob"
+                    name="dob">
+            </div>
+            <div class="form-group col-6">
+                <label> Phone Number </label>
+                <input type="text" class="form-control" id="phoneno" [(ngModel)]="doctor.phoneno"
+                    name="phoneno">
+            </div>
+        </div>
+        <div class="form-group">
+            <label> Email Id</label>
+            <input type="email" class="form-control" id="email" [(ngModel)]="doctor.email" name="email">
+        </div>
+        <button class="btn " type="submit">Add Doctor</button>
+    
+    </form>
+    </div>
