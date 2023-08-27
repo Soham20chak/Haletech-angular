@@ -5,6 +5,7 @@ import { CreateDoctorComponent } from './create-doctor/create-doctor.component';
 import { UpdateDoctorComponent } from './update-doctor/update-doctor.component';
 import { DoctorDetailsComponent } from './doctor-details/doctor-details.component';
 import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
 
 const routes: Routes = [
   {path: 'doctors',component: DoctorsComponent},
@@ -12,7 +13,8 @@ const routes: Routes = [
   {path: 'create-doctors',component: CreateDoctorComponent},
   {path: 'update-doctor/:id',component: UpdateDoctorComponent},
   {path: 'doctor-details/:id',component: DoctorDetailsComponent},
-  {path: 'login',component:LoginComponent}
+  {path: 'login',component:LoginComponent},
+  {path: 'signup',component:SignupComponent}
 
 ];
 
