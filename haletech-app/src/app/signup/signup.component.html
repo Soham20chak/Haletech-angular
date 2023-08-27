@@ -6,17 +6,22 @@
                 <p class="header-text">Welcome to Signup Page </p>
                 <img src="/assets/login.png" class="img-fluid" style="width: 100px;margin-bottom: 10%;">
             </div>  
-                <form (ngSubmit)="onSubmit()">
+                <form [formGroup]="signupForm">
                     <mat-form-field class="full-width" >
                         <mat-label>Username</mat-label>
-                        <input [(ngModel)]="credentials.username" required name="username" type="text" matInput />
+                        <!--[(ngModel)]="credentials.username"-->
+                        <input  required name="username" type="text" matInput />
+                    </mat-form-field>
+                    <mat-form-field class="full-width" >
+                        <mat-label>Email</mat-label>
+                        <input  required name="email" type="email" matInput />
                     </mat-form-field>
                     <mat-form-field class="full-width" >
                         <mat-label>Password</mat-label>
-                        <input  [(ngModel)]="credentials.password" required name="password" type="password" matInput />
+                        <input   required name="password" type="password" matInput />
                     </mat-form-field>
                     <div class="container text-center">
-                        <button  class="submit" type="submit" mat-raised-button color="primary">Submit</button>
+                        <button  class="submit" type="submit" mat-raised-button color="primary">Sign Up</button>
                         <button type="reset" mat-raised-button color="accent">Reset</button>
                     </div>
                 </form>

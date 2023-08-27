@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DoctorsComponent } from './doctors/doctors.component';
 import { CreateDoctorComponent } from './create-doctor/create-doctor.component';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { UpdateDoctorComponent } from './update-doctor/update-doctor.component';
 import { DoctorDetailsComponent } from './doctor-details/doctor-details.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -33,7 +33,8 @@ import { SignupComponent } from './signup/signup.component'
     BrowserAnimationsModule,
     MatFormFieldModule,
     MatInputModule,
-    MatButtonModule
+    MatButtonModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

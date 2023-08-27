@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
@@ -7,21 +8,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SignupComponent implements OnInit {
   
-  credentials={
+  /*credentials={
     username:'',
     password:''
-  }
-  constructor(){}
+  }*/
+
+  signupForm!:FormGroup
+  constructor(private formBuilder: FormBuilder){}
 
   ngOnInit(): void {
+    this.signupForm = this.formBuilder.group({
+      name:[''],
+      email:[''],
+      password:['']
+    })
       
   }
 
-  onSubmit(){
-    console.log("Form is submitted");
-    if((this.credentials.username !='' && this.credentials.password!='') && (this.credentials.username!=null && this.credentials.password!=null)){
-      
-    }
-  }
+  
 
 }
