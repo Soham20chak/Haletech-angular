@@ -11,7 +11,7 @@ import { Router } from '@angular/router';
 })
 export class DoctorsComponent implements OnInit{
   doctors : any;
-
+  searchText;
   constructor(private doctorService : DoctorService,private router:Router){}
 
   ngOnInit(){

@@ -9,6 +9,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./create-doctor.component.css']
 })
 export class CreateDoctorComponent {
+  searchText;
   doctors : any;
   doctor:Doctor = new Doctor();
   constructor(private doctorService:DoctorService,private router: Router){}

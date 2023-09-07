@@ -1,6 +1,6 @@
-
 table {
     width: 100%;
+    margin-bottom: 20px;
 
   }
 
@@ -23,7 +23,8 @@ thead{
 tbody{
     padding-top: 25px;
     padding-bottom: 5px;
-    line-height: 50px;
+    line-height: 30px;
+    margin-bottom: 20px;
 }
 
 .search{
@@ -31,6 +32,19 @@ tbody{
     margin-bottom: 30px;
     margin-left: 70%;
 }
+
+button{
+    margin-bottom: 2px;
+}
+
 *{
     font-family: 'Poppins', sans-serif;
+}
+
+.header-text{
+    text-align: center;
+    margin-top: 5%;
+    font-size: 30px;
+    margin-bottom: 3%;
+    font-weight: bolder;
 }
